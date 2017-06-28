@@ -36,7 +36,7 @@ sudo turnadmin -a -u happy -p happy
 sudo turnserver -L <listening-ip> -a -f
 ```
 
-For AWS(or write params in config file):
+For AWS (or write params in config file):
 ``` 
 sudo turnserver –syslog -a -L ‘amazon ec2 PRIVATE ip address’ -X ‘amazon ec2 PUBLIC ip address’ -E ‘amazon ec2 PRIVATE ip address’ -f –min-port=32355 –max-port=65535 –user=’my_username’:’my_password’ -r realm –log-file=stdout -v
 ```
@@ -47,3 +47,5 @@ sudo turnserver –syslog -a -L ‘amazon ec2 PRIVATE ip address’ -X ‘amazon
 ``` 
 cp /usr/local/etc/turnserver.conf.default /usr/local/etc/turnserver.conf
 ```
+
+> Uncomment `no-stun` in config file for turn only server. 
