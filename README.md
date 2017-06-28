@@ -9,8 +9,18 @@ Basic steps to setup coturn as TURN server:
 2. Download TURN server package
 > wget http://turnserver.open-sys.org/downloads/v4.5.0.6/turnserver-4.5.0.6.tar.gz
 
-3. Create TURN user and password
+3. Install turn server
+
+```
+$ tar xvfz turnserver-2.6.5.2.tar.gz
+$ cd turnserver-2.6.5.2
+$ ./configure
+$ make
+$ sudo make install
+```
+
+4. Create TURN user and password
 > sudo turnadmin -a -u happy -p happy
 
-4. Run TURN server
+5. Run TURN server
 > sudo turnserver -L <listening-ip> -a -f
