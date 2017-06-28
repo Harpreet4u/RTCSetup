@@ -1,0 +1,15 @@
+{
+  "name": "signal-server",
+  "version": "1.0.0",
+  "description": "Super simple signalling server",
+  "main": "server.js",
+  "dependencies": {
+    "socket.io": "^2.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Harpreet",
+  "license": "ISC"
+}
