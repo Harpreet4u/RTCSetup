@@ -1,5 +1,5 @@
 # RTCSetup
-Steps to setup RTC servers (signalling, STUN and TURN)
+Steps to setup RTC servers (signalling, STUN, TURN and Media servers)
 
 Basic steps to setup coturn as TURN server:
 
@@ -49,3 +49,4 @@ cp /usr/local/etc/turnserver.conf.default /usr/local/etc/turnserver.conf
 ```
 
 > Uncomment `no-stun` in config file for turn only server. 
+
